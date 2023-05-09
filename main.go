@@ -1,5 +1,4 @@
-// Módulo de mi primer programa en Go, no solo saluda, sino que además lo
-// traduce a Kirgon
+// Ejercicio de inicialización de paquetes
 package main
 
 import (
@@ -13,7 +12,7 @@ func init() {
 }
 
 func main() {
-	saludo := "¡Hola!"
+	saludo := "Liftoff!"
 	fmt.Println(saludo)
-	fmt.Println(mod2.Translate(saludo))
+	fmt.Println(mod2.Translate("Arecibo message sent"))
 }

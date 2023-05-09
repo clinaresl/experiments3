@@ -13,8 +13,6 @@ func init() {
 }
 
 // traduce cualquier cadena a Kirgon, lo creas o no
-//  Translate("¡Hola!")
-// devuelve el famoso saludo Kirgon H¡o!al
 func Translate(cadena string) string {
 
 	runes := []rune(cadena)
