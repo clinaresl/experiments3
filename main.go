@@ -5,14 +5,17 @@ import (
 	"fmt"
 
 	"github.com/clinaresl/experiments3/mod2"
+	_ "github.com/clinaresl/experiments3/mod3"
+	"github.com/clinaresl/experiments3/payload"
 )
 
 func init() {
-	fmt.Println("Ready to launch ...")
+	fmt.Println("Main: Ready to launch ...")
 }
 
 func main() {
-	saludo := "Liftoff!"
+	payload.Ready()
+	saludo := "Main: Liftoff!"
 	fmt.Println(saludo)
 	fmt.Println(mod2.Translate("Arecibo message sent"))
 }

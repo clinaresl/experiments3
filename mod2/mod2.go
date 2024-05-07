@@ -1,18 +1,18 @@
-// Este modulo traduce cadenas de texto al complicado lenguaje Kirgon
+// Este modulo traduce cadenas de texto al complicado lenguaje Klingon
 package mod2
 
 import (
 	"fmt"
 	"math/rand"
-	"time"
+
+	_ "github.com/clinaresl/experiments3/payload"
 )
 
 func init() {
-	fmt.Println("Módulo 2 activado ...")
-	rand.Seed(time.Now().Unix())
+	fmt.Println("Módulo2: activado ...")
 }
 
-// traduce cualquier cadena a Kirgon, lo creas o no
+// traduce cualquier cadena a Klingon, lo creas o no
 func Translate(cadena string) string {
 
 	runes := []rune(cadena)
